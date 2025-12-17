@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksklusif Kuliner - Luxury Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="luxury-dark">
+    
+    <div id="intro-overlay">
+        <div class="intro-content">
+            <img src="main.png" id="loading-logo" alt="Logo Utama">
+            <div class="spinner-wrapper">
+                <div class="spinner"></div>
+            </div>
+            <p id="loading-text">Menyajikan Kemewahan...</p>
+        </div>
+    </div>
+
+    <div class="app-content"> 
+        <header>
+            <div class="header-container">
+                <div class="logo-box">
+                    <img src="main.png" id="header-logo" alt="Logo Header">
+                </div>
+                <span class="brand-name">Eksklusif Kuliner</span>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="hero-text">
+                <h1>Koleksi Resep Pilihan</h1>
+                <p>Temukan keajaiban rasa dalam setiap hidangan premium.</p>
+            </section>
+            
+            <section class="search-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Cari hidangan (Cth: Beef, Salmon, Pasta)">
+                    <button onclick="searchRecipe()">CARI</button>
+                </div>
+                <div id="resultsContainer">
+                    <p class="placeholder-info">Hasil pencarian akan muncul di sini secara eksklusif.</p>
+                </div>
+            </section>
+
+            <div class="separator"></div> 
+
+            <section class="random-section">
+                <h2>Inspirasi Hari Ini 🥂</h2>
+                <div class="carousel-outer">
+                    <div class="carousel-track" id="randomRecipeCarousel">
+                        </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
